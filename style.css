@@ -1,0 +1,18 @@
+/* Alba's own values, read from Alba/DesignSystem/DesignTokens.swift rather than
+   picked again here. A brand value is a NUMBER, and a sibling's accent has
+   already shipped inside another app's assets by being restated from memory. */
+:root { color-scheme: light dark; --ink:#2D2C3B; --muted:#6A6478; --accent:#B04A2F; --bg:#F9F4F2; --card:#FFFDFC; --line:#E8DFDB; }
+@media (prefers-color-scheme: dark){ :root{ --ink:#F3EEF7; --muted:#A9A2BC; --accent:#F0956F; --bg:#1B1726; --card:#241F33; --line:#362F4B; } }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+h1{font-size:2rem;line-height:1.2;margin:0 0 .25rem}
+h2{font-size:1.2rem;margin:2.25rem 0 .5rem}
+h3{font-size:1.02rem;margin:1.5rem 0 .35rem}
+.sub{color:var(--muted);margin:0 0 2rem}
+a{color:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:1rem;padding-bottom:1.25rem;border-bottom:1px solid var(--line);margin-bottom:1.75rem}
+nav a{text-decoration:none;font-weight:500}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.25rem;margin:1rem 0}
+.updated{color:var(--muted);font-size:.9rem;margin-top:2.5rem;border-top:1px solid var(--line);padding-top:1rem}
+ul{padding-left:1.2rem} li{margin:.35rem 0}
